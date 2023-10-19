@@ -9,11 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // middleware
 app.use(express.json());
-app.use(
-  cors({
-    origin: "http://facebook-story.great-site.net",
-  })
-);
+app.use(cors());
 
 // Nodemailer setup
 
